@@ -15,4 +15,5 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # Create symlinks
 echo -e "${YELLOW}Create symlinks${NC}"
 ln -sfv "$DOTFILES_DIR/.atom" ~
+ln -sfv "$DOTFILES_DIR/.hyper.js" ~
 ln -sfv "$DOTFILES_DIR/omf" ~/.config
