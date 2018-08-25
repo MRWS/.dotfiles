@@ -1,0 +1,8 @@
+[user]
+	email = m.sentenac@gmail.com
+	name = Marwan SENTENAC
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
