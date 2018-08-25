@@ -1,0 +1,51 @@
+"*":
+  "atom-ide-ui":
+    "atom-ide-debugger": {}
+    use:
+      "atom-ide-debugger": "never"
+  "atom-package-deps":
+    ignored: [
+      "linter-js-standard"
+    ]
+  autosave:
+    enabled: true
+  core:
+    debugLSP: true
+    disabledPackages: [
+      "language-vue"
+      "standard-formatter"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+    titleBar: "custom-inset"
+  editor:
+    fontSize: 15
+    showIndentGuide: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "3b3f55e5-af46-4be7-8c26-fe17f02d476b"
+  "ide-flowtype":
+    tryFlowBin: true
+  "ide-typescript": {}
+  "language-babel": {}
+  "linter-js-standard":
+    checkForEslintConfig: false
+    checkStyleDevDependencies: true
+    showEslintRules: true
+  "linter-rails-best-practices": {}
+  "linter-ui-default":
+    showStatusBar: false
+  "markdown-preview":
+    useGitHubStyle: true
+  "prettier-atom":
+    formatOnSaveOptions: {}
+    useEslint: true
+  "svg-preview":
+    openPreviewAutomatically: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
