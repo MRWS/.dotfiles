@@ -18,3 +18,6 @@ ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.atom" ~
 ln -sfv "$DOTFILES_DIR/.hyper.js" ~
 ln -sfv "$DOTFILES_DIR/omf" ~/.config
+
+# execute flag on bin
+chmod u+x "$DOTFILES_DIR/bin/*"

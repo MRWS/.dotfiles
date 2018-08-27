@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+BIN_NAME=$(basename "$0")
+COMMAND_NAME=$1
+SUB_COMMAND_NAME=$2
+
+sub_help () {
+  echo "Usage: $BIN_NAME <command>"
+  echo
+  echo "Commands:"
+  echo "   atom            Save atom's packages list"
+}
+
+sub_atom () {
+  apm list --installed --bare > ~/.atom/package.list
+  cat ~/.atom/package.list
+}
+
+case $COMMAND_NAME in
+  "" | "-h" | "--help")
+    sub_help
+    ;;
+  *)
+    shift
+    sub_${COMMAND_NAME} $@
+    if [ $? = 127 ]; then
+      echo "'$COMMAND_NAME' is not a known command or has errors." >&2
+      sub_help
+      exit 1
+    fi
+    ;;
+esac
