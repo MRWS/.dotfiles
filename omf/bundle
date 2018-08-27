@@ -1,3 +1,5 @@
+package brew
+package https://github.com/laughedelic/brew-completions
 package node
 theme default
 theme robbyrussell
