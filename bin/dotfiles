@@ -8,12 +8,20 @@ sub_help () {
   echo "Usage: $BIN_NAME <command>"
   echo
   echo "Commands:"
+  echo "   clean           Clean up caches (brew, npm, gem, yarn)"
   echo "   atom            Save atom's packages list"
 }
 
 sub_atom () {
   apm list --installed --bare > ~/.atom/package.list
   cat ~/.atom/package.list
+}
+
+sub_clean () {
+  brew cleanup
+  npm cache verify
+  yarn cache clean
+  gem cleanup
 }
 
 case $COMMAND_NAME in
