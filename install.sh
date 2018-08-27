@@ -21,3 +21,16 @@ ln -sfv "$DOTFILES_DIR/omf" ~/.config
 
 # execute flag on bin
 chmod u+x "$DOTFILES_DIR/bin/*"
+
+xcode-select --install
+
+# TODO: Install brew / brew cask / https://github.com/mas-cli/mas
+
+# TODO: Setup Atom / OMF (install packages)
+
+# TODO: rbenv / ruby / node / npm / yarn / heroku
+
+# TODO: Postgresql
+
+bash "$DOTFILES_DIR/macos.sh"
+bash "$DOTFILES_DIR/dock.sh"
