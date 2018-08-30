@@ -38,6 +38,7 @@
     checkStyleDevDependencies: true
     showEslintRules: true
   "linter-rails-best-practices": {}
+  "linter-rubocop": {}
   "linter-ui-default":
     showStatusBar: false
   "markdown-preview":

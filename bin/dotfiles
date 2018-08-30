@@ -21,7 +21,6 @@ sub_clean () {
   brew cleanup
   npm cache verify
   yarn cache clean
-  gem cleanup
 }
 
 case $COMMAND_NAME in
