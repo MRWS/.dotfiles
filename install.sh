@@ -10,7 +10,7 @@ NC='\033[0m' # No Color
 PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Update dotfiles itself first
-# if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
+if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
 
 # Create symlinks
 echo -e "${YELLOW}Create symlinks${NC}"
@@ -24,13 +24,24 @@ chmod u+x "$DOTFILES_DIR/bin/*"
 
 xcode-select --install
 
-# TODO: Install brew / brew cask / https://github.com/mas-cli/mas
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# TODO: Setup Atom / OMF (install packages)
+# TODO: https://github.com/mas-cli/mas ?
 
-# TODO: rbenv / ruby / node / npm / yarn / heroku
+brew install fish git rbenv node npm yarn heroku php postgresql redis trash
 
-# TODO: Postgresql
+curl -L https://get.oh-my.fish | fish
+omf install
+omf update
+
+npm i -g git-open http-server internal-ip-cli public-ip-cli wifi-password-cli
+
+brew cask install google-chrome firefox atom spotify slack sketch hyper insomnia dashlane authy divvy transmission vlc
+
+# Setup Atom
+apm install --packages-file ~/.atom/package.list
+
 
 bash "$DOTFILES_DIR/macos.sh"
 bash "$DOTFILES_DIR/dock.sh"
