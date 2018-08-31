@@ -42,7 +42,7 @@ brew cask install google-chrome firefox atom spotify slack sketch hyper insomnia
 brew cask install font-fontawesome font-lato font-montserrat font-nunito font-open-sans font-roboto font-titillium-web font-ubuntu
 
 # Setup Atom
-apm install --packages-file ~/.atom/package.list
+apm install --packages-file "$DOTFILES_DIR/.atom/package.list"
 
 bash "$DOTFILES_DIR/macos.sh"
 bash "$DOTFILES_DIR/dock.sh"
