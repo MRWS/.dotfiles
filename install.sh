@@ -20,6 +20,8 @@ ln -sfv "$DOTFILES_DIR/.hyper.js" ~
 ln -sfv "$DOTFILES_DIR/omf" ~/.config
 ln -sfv "$DOTFILES_DIR/.pryrc" ~
 
+mkdir ~/Sites
+
 # execute flag on bin
 chmod u+x "$DOTFILES_DIR/bin/*"
 
