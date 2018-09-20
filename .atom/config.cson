@@ -6,15 +6,17 @@
   "atom-package-deps":
     ignored: [
       "linter-js-standard"
+      "linter"
+      "prettier-atom"
     ]
   autosave:
     enabled: true
   core:
     debugLSP: true
     disabledPackages: [
-      "language-vue"
       "standard-formatter"
       "language-javascript"
+      "linter-js-standard"
     ]
     telemetryConsent: "limited"
     themes: [
