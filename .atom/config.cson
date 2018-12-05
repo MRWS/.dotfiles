@@ -15,8 +15,8 @@
     debugLSP: true
     disabledPackages: [
       "standard-formatter"
-      "language-javascript"
       "linter-js-standard"
+      "ide-flowtype"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -35,6 +35,7 @@
     tryFlowBin: true
   "ide-typescript": {}
   "language-babel": {}
+  "linter-eslint": {}
   "linter-js-standard":
     checkForEslintConfig: false
     checkStyleDevDependencies: true
