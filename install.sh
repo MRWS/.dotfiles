@@ -19,6 +19,7 @@ ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/.atom" ~
 ln -sfv "$DOTFILES_DIR/.hyper.js" ~
 ln -sfv "$DOTFILES_DIR/omf" ~/.config
+ln -sfv "$DOTFILES_DIR/config.fish" ~/.config/fish
 ln -sfv "$DOTFILES_DIR/.pryrc" ~
 
 mkdir ~/Sites
