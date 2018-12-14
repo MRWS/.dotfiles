@@ -1,8 +1,7 @@
 "*":
   "atom-ide-ui":
     "atom-ide-debugger": {}
-    use:
-      "atom-ide-debugger": "never"
+    use: {}
   "atom-package-deps":
     ignored: [
       "linter-js-standard"
