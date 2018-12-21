@@ -11,10 +11,15 @@
   autosave:
     enabled: true
   core:
+    customFileTypes:
+      "source.js.jsx": [
+        "js"
+      ]
     debugLSP: true
     disabledPackages: [
       "standard-formatter"
       "linter-js-standard"
+      "ide-typescript"
       "ide-flowtype"
     ]
     telemetryConsent: "limited"

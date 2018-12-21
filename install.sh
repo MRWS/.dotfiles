@@ -40,9 +40,9 @@ curl -L https://get.oh-my.fish | fish
 omf install
 omf update
 
-npm i -g git-open http-server internal-ip-cli public-ip-cli wifi-password-cli
+npm i -g git-open http-server internal-ip-cli public-ip-cli wifi-password-cli svgo
 
-brew cask install google-chrome firefox atom spotify slack sketch hyper insomnia dashlane authy divvy transmission vlc discord
+brew cask install google-chrome firefox atom spotify slack sketch hyper insomnia dashlane authy divvy transmission vlc discord docker
 
 brew cask install font-fontawesome font-lato font-montserrat font-nunito font-open-sans font-roboto font-titillium-web font-ubuntu
 
