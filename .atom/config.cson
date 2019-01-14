@@ -19,7 +19,6 @@
     disabledPackages: [
       "standard-formatter"
       "linter-js-standard"
-      "ide-typescript"
       "ide-flowtype"
     ]
     telemetryConsent: "limited"
@@ -37,9 +36,19 @@
     userId: "3b3f55e5-af46-4be7-8c26-fe17f02d476b"
   "ide-flowtype":
     tryFlowBin: true
-  "ide-typescript": {}
+  "ide-typescript":
+    javascriptSupport: false
   "language-babel": {}
-  "linter-eslint": {}
+  "linter-eslint":
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.flow"
+      "source.babel"
+      "source.js-semantic"
+      "source.ts"
+    ]
   "linter-js-standard":
     checkForEslintConfig: false
     checkStyleDevDependencies: true
