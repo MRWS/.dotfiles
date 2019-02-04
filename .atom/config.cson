@@ -37,7 +37,7 @@
   "ide-flowtype":
     tryFlowBin: true
   "ide-typescript":
-    javascriptSupport: false
+    diagnosticsEnabled: false
   "language-babel": {}
   "linter-eslint":
     scopes: [
