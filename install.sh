@@ -34,7 +34,7 @@ xcode-select --install
 
 # TODO: https://github.com/mas-cli/mas ?
 
-brew install fish git rbenv node npm yarn heroku php postgresql redis trash
+brew install fish git rbenv node npm yarn php postgresql redis trash
 
 curl -L https://get.oh-my.fish | fish
 omf install
