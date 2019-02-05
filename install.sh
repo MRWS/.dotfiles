@@ -27,17 +27,12 @@ xcode-select --install
 brew install fish git rbenv node npm yarn php postgresql redis trash
 
 curl -L https://get.oh-my.fish | fish
-omf install
-omf update
 
 npm i -g git-open http-server internal-ip-cli public-ip-cli wifi-password-cli svgo
 
 brew cask install google-chrome firefox atom spotify slack sketch hyper insomnia dashlane authy divvy transmission vlc discord docker
 
 brew cask install font-fontawesome font-lato font-montserrat font-nunito font-open-sans font-roboto font-titillium-web font-ubuntu
-
-# Setup Atom
-apm install --packages-file "$DOTFILES_DIR/.atom/package.list"
 
 # Create symlinks
 echo -e "${YELLOW}Create symlinks${NC}"
@@ -48,6 +43,13 @@ ln -sfv "$DOTFILES_DIR/.hyper.js" ~
 ln -sfv "$DOTFILES_DIR/omf" ~/.config
 ln -sfv "$DOTFILES_DIR/config.fish" ~/.config/fish
 ln -sfv "$DOTFILES_DIR/.pryrc" ~
+
+# Setup Fish
+omf install
+omf update
+
+# Setup Atom
+apm install --packages-file "$DOTFILES_DIR/.atom/package.list"
 
 bash "$DOTFILES_DIR/macos.sh"
 bash "$DOTFILES_DIR/dock.sh"
