@@ -12,16 +12,6 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # Update dotfiles itself first
 if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
 
-# Create symlinks
-echo -e "${YELLOW}Create symlinks${NC}"
-ln -sfv "$DOTFILES_DIR/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
-ln -sfv "$DOTFILES_DIR/.atom" ~
-ln -sfv "$DOTFILES_DIR/.hyper.js" ~
-ln -sfv "$DOTFILES_DIR/omf" ~/.config
-ln -sfv "$DOTFILES_DIR/config.fish" ~/.config/fish
-ln -sfv "$DOTFILES_DIR/.pryrc" ~
-
 mkdir ~/Sites
 
 # execute flag on bin
@@ -48,6 +38,16 @@ brew cask install font-fontawesome font-lato font-montserrat font-nunito font-op
 
 # Setup Atom
 apm install --packages-file "$DOTFILES_DIR/.atom/package.list"
+
+# Create symlinks
+echo -e "${YELLOW}Create symlinks${NC}"
+ln -sfv "$DOTFILES_DIR/.gitconfig" ~
+ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
+ln -sfv "$DOTFILES_DIR/.atom" ~
+ln -sfv "$DOTFILES_DIR/.hyper.js" ~
+ln -sfv "$DOTFILES_DIR/omf" ~/.config
+ln -sfv "$DOTFILES_DIR/config.fish" ~/.config/fish
+ln -sfv "$DOTFILES_DIR/.pryrc" ~
 
 bash "$DOTFILES_DIR/macos.sh"
 bash "$DOTFILES_DIR/dock.sh"
