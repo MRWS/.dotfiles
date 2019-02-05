@@ -32,7 +32,7 @@ npm i -g git-open http-server internal-ip-cli public-ip-cli wifi-password-cli sv
 
 brew cask install google-chrome firefox atom spotify slack sketch hyper insomnia dashlane authy divvy transmission vlc discord docker
 
-brew cask install font-fontawesome font-lato font-montserrat font-nunito font-open-sans font-roboto font-titillium-web font-ubuntu
+brew cask install font-lato font-montserrat font-nunito font-open-sans font-roboto font-titillium-web font-ubuntu
 
 # Create symlinks
 echo -e "${YELLOW}Create symlinks${NC}"
