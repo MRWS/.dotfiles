@@ -7,6 +7,6 @@
 	ci = commit
 	st = status
 [core]
-	editor = atom --wait
+	editor = code --wait
 	excludesfile = ~/.gitignore_global
   ignorecase = false
